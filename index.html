@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="background">
+    <div class="colors" id="color1"></div>
+    <div class="colors" id="color2"></div>
+    <div class="colors" id="color3"></div>
+    <div class="colors" id="color4"></div>
+</div>
+
+<div id="telaInicial">
+    <p>Voltar ao início</p>
+</div>
+
+<div class="container">
+
+    <h1 id="titulo">Que horas o Sol...</h1>
+
+    <div id='map'>
+        <img id="marker" src="resources/img/marker-icon.png">
+    </div>
+
+    <input id="searchBtn" type="button" value="Pesquisar">
+
+</div>
+
+<div id="pesquisaDone">
+
+    <div id="sunrise" class="infoBox">
+        <img class="sunIcon" src="resources/icon/sunrise.png">
+
+
+        <div id="line">
+
+        </div>
+
+        <p id="sunriseTime">Nasce: </p>
+    </div>
+    <div id="sunset" class="infoBox">
+        
+        <p id="sunsetTime">Se põe:</p>
+        
+        <div id="line">
+            
+        </div>
+        
+        <img class="sunIcon" src="resources/icon/sunset.png">
+    </div>
+
+</div>
+
+<div id="lastSearch">
+    <p>ultimas pesquisas</p>
+</div>
+
+<div id="pesquisas">
+    <!--<div id="resultado">
+        <div class="textoLatLong">
+            <p id="latId">latitude: </p>
+            <p id="longId">longitude: </p>
+        </div>
+        <div id="containerResult">
+            <div id="sunRise" class="lastResult">
+                img
+                p sunrise
+            </div>
+            <div id="sunSet" class="lastResult">
+                img
+                p sunset
+                
+            </div>
+        </div>
+    </div>
+    !-->
+
+
+    
+</div>
+
+<input type="button" value="Limpar" id="clearBtn">
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
